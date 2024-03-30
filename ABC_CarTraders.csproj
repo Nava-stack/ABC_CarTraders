@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3189E8A7-6517-4F3D-BB6A-3CABE4D5F862}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ABC_CarTraders</RootNamespace>
+    <AssemblyName>ABC_CarTraders</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Navarasan\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2C1D7E216AED8A473D60AEEA791E70E421F98621</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ABC_CarTraders_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\SystemData\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\SystemData\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminAppointForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminAppointForm.Designer.cs">
+      <DependentUpon>adminAppointForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAppointReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAppointReportForm.Designer.cs">
+      <DependentUpon>AdminAppointReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminCarOrderForm1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminCarOrderForm1.Designer.cs">
+      <DependentUpon>adminCarOrderForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCarReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCarReportForm.Designer.cs">
+      <DependentUpon>AdminCarReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCarStockReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCarStockReportForm.Designer.cs">
+      <DependentUpon>AdminCarStockReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCarSupplyReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCarSupplyReportForm.Designer.cs">
+      <DependentUpon>AdminCarSupplyReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminCustomerForm1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminCustomerForm1.Designer.cs">
+      <DependentUpon>adminCustomerForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminDashForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminDashForm.Designer.cs">
+      <DependentUpon>adminDashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminEmployeeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminEmployeeForm.Designer.cs">
+      <DependentUpon>adminEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminGoodServiceForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminGoodServiceForm.Designer.cs">
+      <DependentUpon>adminGoodServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminInventoryForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminInventoryForm.Designer.cs">
+      <DependentUpon>adminInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrderPayReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrderPayReportForm.Designer.cs">
+      <DependentUpon>AdminOrderPayReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrderReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrderReportForm.Designer.cs">
+      <DependentUpon>AdminOrderReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPayForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminPayForm.Designer.cs">
+      <DependentUpon>adminPayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminServicePayReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminServicePayReportForm.Designer.cs">
+      <DependentUpon>AdminServicePayReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSpareReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSpareReportForm.Designer.cs">
+      <DependentUpon>AdminSpareReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSpareStockReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSpareStockReportForm.Designer.cs">
+      <DependentUpon>AdminSpareStockReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSpareSupplyReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSpareSupplyReportForm.Designer.cs">
+      <DependentUpon>AdminSpareSupplyReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminSupplyForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminSupplyForm.Designer.cs">
+      <DependentUpon>adminSupplyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppClass\Admin.cs" />
+    <Compile Include="AppClass\adminAppointmentClass.cs" />
+    <Compile Include="AppClass\adminCarDetailClass.cs" />
+    <Compile Include="AppClass\adminDashboardClass.cs" />
+    <Compile Include="AppClass\adminInventoryClass.cs" />
+    <Compile Include="AppClass\adminOrderClass.cs" />
+    <Compile Include="AppClass\adminDashClass.cs" />
+    <Compile Include="AppClass\adminEmployeeClass.cs" />
+    <Compile Include="AppClass\adminPartClass.cs" />
+    <Compile Include="AppClass\adminPaymentClass.cs" />
+    <Compile Include="AppClass\adminSupplierClass.cs" />
+    <Compile Include="AppClass\adminCustomerDetailClass.cs" />
+    <Compile Include="AppClass\adOrderReportClass.cs" />
+    <Compile Include="AppClass\Customer.cs" />
+    <Compile Include="AppClass\customerAppointmentClass.cs" />
+    <Compile Include="AppClass\customerCarClass.cs" />
+    <Compile Include="AppClass\customerDashboardClass.cs" />
+    <Compile Include="AppClass\customerDashClass.cs" />
+    <Compile Include="AppClass\customerOrderClass.cs" />
+    <Compile Include="AppClass\customerPartClass.cs" />
+    <Compile Include="AppClass\customerPaymentClass.cs" />
+    <Compile Include="AppClass\customerProfileClass.cs" />
+    <Compile Include="AppClass\customerRateClass.cs" />
+    <Compile Include="AppClass\loginClass.cs" />
+    <Compile Include="ChartModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChartModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChartModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChartModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChartModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChartModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\com.cs" />
+    <Compile Include="cusOrderPayCardForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cusOrderPayCardForm1.Designer.cs">
+      <DependentUpon>cusOrderPayCardForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAppointCardPayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAppointCardPayForm.Designer.cs">
+      <DependentUpon>CustomerAppointCardPayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerAppointForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerAppointForm.Designer.cs">
+      <DependentUpon>customerAppointForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerCarForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerCarForm.Designer.cs">
+      <DependentUpon>customerCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboardForm.Designer.cs">
+      <DependentUpon>CustomerDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerDashForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerDashForm.Designer.cs">
+      <DependentUpon>customerDashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerOrderForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerOrderForm.Designer.cs">
+      <DependentUpon>customerOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerPaymentForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerPaymentForm.Designer.cs">
+      <DependentUpon>customerPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerProfileForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerProfileForm.Designer.cs">
+      <DependentUpon>customerProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRateForm.Designer.cs">
+      <DependentUpon>CustomerRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerSparePartForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customerSparePartForm.Designer.cs">
+      <DependentUpon>customerSparePartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAsForm.Designer.cs">
+      <DependentUpon>LoginAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="paySuccessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paySuccessForm.Designer.cs">
+      <DependentUpon>paySuccessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterAsForm.Designer.cs">
+      <DependentUpon>RegisterAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportClass.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Revenue.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adminAppointForm.resx">
+      <DependentUpon>adminAppointForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAppointReportForm.resx">
+      <DependentUpon>AdminAppointReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminCarOrderForm1.resx">
+      <DependentUpon>adminCarOrderForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCarReportForm.resx">
+      <DependentUpon>AdminCarReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCarStockReportForm.resx">
+      <DependentUpon>AdminCarStockReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCarSupplyReportForm.resx">
+      <DependentUpon>AdminCarSupplyReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminCustomerForm1.resx">
+      <DependentUpon>adminCustomerForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboardForm.resx">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminDashForm.resx">
+      <DependentUpon>adminDashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminEmployeeForm.resx">
+      <DependentUpon>adminEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminGoodServiceForm.resx">
+      <DependentUpon>adminGoodServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminInventoryForm.resx">
+      <DependentUpon>adminInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrderPayReportForm.resx">
+      <DependentUpon>AdminOrderPayReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrderReportForm.resx">
+      <DependentUpon>AdminOrderReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPayForm.resx">
+      <DependentUpon>adminPayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminServicePayReportForm.resx">
+      <DependentUpon>AdminServicePayReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSpareReportForm.resx">
+      <DependentUpon>AdminSpareReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSpareStockReportForm.resx">
+      <DependentUpon>AdminSpareStockReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSpareSupplyReportForm.resx">
+      <DependentUpon>AdminSpareSupplyReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminSupplyForm.resx">
+      <DependentUpon>adminSupplyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cusOrderPayCardForm1.resx">
+      <DependentUpon>cusOrderPayCardForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerAppointCardPayForm.resx">
+      <DependentUpon>CustomerAppointCardPayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerAppointForm.resx">
+      <DependentUpon>customerAppointForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerCarForm.resx">
+      <DependentUpon>customerCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDashboardForm.resx">
+      <DependentUpon>CustomerDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerDashForm.resx">
+      <DependentUpon>customerDashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerOrderForm.resx">
+      <DependentUpon>customerOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerPaymentForm.resx">
+      <DependentUpon>customerPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerProfileForm.resx">
+      <DependentUpon>customerProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRateForm.resx">
+      <DependentUpon>CustomerRateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerSparePartForm.resx">
+      <DependentUpon>customerSparePartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAsForm.resx">
+      <DependentUpon>LoginAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paySuccessForm.resx">
+      <DependentUpon>paySuccessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAsForm.resx">
+      <DependentUpon>RegisterAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ChartModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ChartModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ABC_CarTraders_TemporaryKey.pfx" />
+    <None Include="ChartModel.edmx.diagram">
+      <DependentUpon>ChartModel.edmx</DependentUpon>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ImageDirectory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChartModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChartModel.edmx</DependentUpon>
+      <LastGenOutput>ChartModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ChartModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChartModel.edmx</DependentUpon>
+      <LastGenOutput>ChartModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Assets\icons8-home-64.png" />
+    <None Include="Assets\icons8-home-48.png" />
+    <None Include="Assets\icons8-home-25.png" />
+    <None Include="Assets\home-solid-96.png" />
+    <None Include="Assets\Home.png" />
+    <Content Include="Assets\icons8-back-100.png" />
+    <Content Include="Assets\icons8-car-100.png" />
+    <None Include="Assets\icons8-employee2-100.png" />
+    <None Include="Assets\icons8-employee-100.png" />
+    <None Include="Resources\icons8-car-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
