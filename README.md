@@ -4,11 +4,10 @@
 
 The ABC Car Traders Management System is a comprehensive software solution developed to help ABC Car Traders maintain their reputation as a trusted supplier of high-quality vehicles and transport solutions. The system supports efficient management of vehicles, car parts, customers, and orders, enabling superior customer service and streamlined operations.
 
-![System Overview](dashboard.png)
+<p align="center">
+  <img src="dashboard.png" alt="System Overview">
+</p>
 
-###
-
-![customer](customer.png)
 ## Features
 
 ### Admin Features
