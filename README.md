@@ -35,3 +35,5 @@ The ABC Car Traders Management System is a comprehensive software solution devel
 4. Set up the database connection in the configuration file.
 5. Run the application.
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
