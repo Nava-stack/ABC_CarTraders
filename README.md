@@ -33,7 +33,7 @@ The ABC Car Traders Management System is a comprehensive software solution devel
 - **Tools**: Visual Studio
 
 ## Getting Started
-1. Clone the repository: `git clone https://github.com/Naa-stack/ABC_CarTraders.git`
+1. Clone the repository: `git clone https://github.com/Nava-stack/ABC_CarTraders.git`
 2. Open the project in Visual Studio.
 3. Restore the NuGet packages.
 4. Set up the database connection in the configuration file.
